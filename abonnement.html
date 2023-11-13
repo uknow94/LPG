@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Album example · Bootstrap v5.3</title>
+    <title>Signin Template · Bootstrap v5.3</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
 
     
 
@@ -97,8 +97,10 @@
     </style>
 
     
+    <!-- Custom styles for this template -->
+    <link href="sign-in.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -142,104 +144,41 @@
         </li>
         <li>
           <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>!
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
             Auto
             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-
           </button>
         </li>
       </ul>
     </div>
 
     
-<header data-bs-theme="dark">
-  <div class="collapse text-bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4>About</h4>
-          <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4>Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
+<main class="form-signin w-100 m-auto">
+  <form>
+    <a href="acceuil.html">
+    <img class="mb-4" src="logo.PNG" alt="" width="72" height="57">
+    </a>
+    <h1 class="h3 mb-3 fw-normal">connecté vous</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">address email</label>
     </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="acceuil.html" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"></svg>
-        <img src="logo.PNG" alt="">
-        <strong></strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">mot de passe</label>
     </div>
-  </div>
-</header>
 
-<main>
-
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">conditionn Générales de ventes</h1>
-        <!--<p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>!-->
-        </p>
-      </div>
+    <div class="form-check text-start my-3">
+      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        reter connecter
+      </label>
     </div>
-  </section>
-  <ul>
-    <h4>1. Présentation de l'Entreprise</h4>
-    <li>Les présentes Conditions Générales de Vente (CGV) sont proposées par Paniers Gourmands de Juliette, exploitée par Juliette Bongout, domiciliée au 123 Rue Gourmande, 75003 Paris.</li>
-    <h4>2. Commandes</h4>
-    <li>Les commandes sont passées via notre site internet <a href="acceuil.html"></a></li>
-    <li>Les informations sur nos produits, tarifs, et modalités de paiement sont disponibles sur le site.</li>
-    <li>En confirmant une commande, le client reconnaît avoir pris connaissance et accepté les CGV.</li>
-    <h4>3. Produits et Prix</h4>
-    <li>Nos produits sont décrits avec soin sur le site. Les images sont non contractuelles.</li>
-    <li>Les prix sont indiqués en euros, toutes taxes comprises. Les frais de livraison sont précisés lors de la commande.</li>
-    <h4>4. Paiement</h4>
-    <li>Les paiements s'effectuent en ligne par carte bancaire.</li>
-    <li>La commande est validée après confirmation du paiement.</li>
-    <h4>5. Livraison</h4>
-    <li>Les délais de livraison sont indiqués lors de la commande.</li>
-    <li>Le client est responsable de l'exactitude des informations de livraison fournies.</li>
-    <li>En cas de retard exceptionnel, le client en est informé.</li>
-    <h4>6. Droit de Rétractation</h4>
-    <li>Le client dispose d'un délai de 14 jours pour exercer son droit de rétractation.</li>
-    <li>Les frais de retour sont à la charge du client.</li>
-    <h4>7. Responsabilités et Garanties</h4>
-    <li>Nous nous engageons à fournir des produits de qualité.</li>
-    <li>En cas de produit défectueux, nous procéderons au remplacement ou au remboursement.</li>
-    <h4>8. Protection des Données Personnelles</h4>
-    <li>Nous collectons des données conformément à notre Politique de Confidentialité disponible sur notre site.</li>
-    <h4>9. Litiges et Médiation</h4>
-    <li>En cas de litige, une médiation peut être envisagée avant toute action en justice.</li>
-    <h4>10. Modifications des CGV</h4>
-    <li>Les présentes CGV peuvent être modifiées. Les nouvelles conditions seront applicables aux commandes postérieures à leur publication.</li>
-    <h3>contact</h3>
-    <li>Paniers Gourmands de Juliette
-      123 Rue Gourmande, 75003 Paris
-      E-mail : contact@paniersgourmands-juliette.com
-      Téléphone : 6 12 34 56 78</li>
-  </ul>
-
-  <div class="album py-5 bg-body-tertiary">
-    <div class="container">
-
-  </div>
-</footer>
+    <button class="btn btn-primary w-100 py-2" type="submit">connexion</button>
+    <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
+  </form>
+</main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
